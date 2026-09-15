@@ -8,7 +8,7 @@ def validate_attendees(attendees):
     """Validate an integer attendee count, raising ValueError if invalid."""
     if type(attendees) is not int:
         raise ValueError("Enter a whole number of attendees.")
-    if attendees < 0:
+    if attendees < 1:
         raise ValueError("At least one attendee is required.")
 
 

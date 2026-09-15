@@ -4,6 +4,10 @@ from booking import create_booking, validate_attendees
 
 
 class BookingTests(unittest.TestCase):
+    def test_zero_attendees_are_rejected(self):
+        with self.assertRaises(ValueError):
+            validate_attendees(0)
+
     def test_negative_attendees_are_rejected(self):
         with self.assertRaises(ValueError):
             validate_attendees(-1)
