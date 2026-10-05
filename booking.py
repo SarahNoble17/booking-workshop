@@ -1,7 +1,7 @@
 """Small booking application for the version-control workshop."""
 import argparse
 
-CONFIRMATION = "Booking confirmed for {attendees} attendee(s)."
+CONFIRMATION = "Reseravtion accepted for {attendees} attendee(s)."
 
 
 def validate_attendees(attendees):
